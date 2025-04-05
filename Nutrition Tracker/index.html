@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pregnancy Nutrient Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Home Screen -->
+      <div class="home-screen screen">
+        <h1>Welcome to the Pregnancy Nutrient Tracker</h1>
+        <label for="trimester-select">Select your trimester:</label>
+        <select id="trimester-select">
+          <option value="First Trimester">First Trimester</option>
+          <option value="Second Trimester">Second Trimester</option>
+          <option value="Third Trimester">Third Trimester</option>
+        </select>
+        <button class="show-tasks-btn">Show Nutrient Checklist</button>
+      </div>
+
+      <!-- Category Screen (where nutrient list appears) -->
+      <div class="category-screen screen">
+        <h2 id="category-title">First Trimester</h2>
+        <div id="tasks-list"></div>
+        <div id="suggestion-box"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

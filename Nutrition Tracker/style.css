@@ -1,0 +1,114 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f3f6; 
+  color: #000000;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+h1, h2 {
+  color: #ff78a2; 
+  font-size: 2rem;
+}
+button, select {
+  padding: 12px;
+  font-size: 1.2rem;
+  margin: 15px 0;
+  border-radius: 12px;
+  border: 1px solid #e0a1c2;
+  cursor: pointer;
+  background-color: #ff78a2;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #ff4f7b;
+}
+.home-screen {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+select {
+  width: 80%;
+  border-radius: 12px;
+  background-color: #fce1f1;
+  font-size: 1.2rem;
+}
+.category-screen {
+  display: none;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  margin-top: 30px;
+}
+#tasks-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+#tasks-list li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #ffebf3;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#suggestion-box p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  padding-left: 20px;
+  color: #000000;
+}
+h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #ff78a2; 
+}
+.back-btn {
+  display: block;
+  width: fit-content;
+  padding: 12px 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+  text-align: center;
+}
+.back-btn:hover {
+  background: linear-gradient(135deg, #ff4f7b, #ff758c);
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  #tasks-list li {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+  #suggestion-box p {
+    font-size: 1.1rem;
+  }
+}
